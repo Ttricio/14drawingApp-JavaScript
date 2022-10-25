@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,300&family=Poppins:wght@300;400;500&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color:  #e1b382;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+  }
+.user-form{
+	width: 100%;
+	max-width: 700px;
+	
+}
+
+.user-form > input{
+	width: 100%;
+	margin: 20px;
+	display: block;
+	background-color: #7d3cff;
+	border-radius: 10px;
+	height: 30px;
+	border: none;
+	padding: 1rem;
+	color: white;
+	margin-bottom: 2rem;
+	font-family: inherit;
+	font-size: 1.2rem;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+.user-form > input:focus{
+	outline: none;
+	background-color: #905afd;
+}
+
+.card{
+	max-width: 800px;
+	background-color: #7d3cff;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 3rem;
+	display:flex;
+	margin: 0 1.5rem;
+}
+
+.avatar{
+	border-radius: 50%;
+	border: 5px solid #c80e13;
+	height: 150px;
+	width: 150px;
+
+
+}
+
+.user-info{
+	color: white;
+	margin-left: 2rem;
+}
+
+.user-info > h2{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.user-info > ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.user-info > ul > li{
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	margin-bottom: 10px;
+	font-weight: 300;
+	color: red;
+
+}
+
+span {
+	margin-left: 10px;
+	font-weight: 500;
+	color: black;
+
+}
+#repo{
+	display:flex;
+	flex-wrap: wrap;
+}
+.repo{
+	text-decoration: none;
+	color: white;
+	background-color: #c89666;
+	padding: 5px;
+	border-radius: 7px;
+	margin-right: 10px;
+	font-size: 0.8rem;
+	margin-bottom: 15px;
+	
+
+	
+	
+
+}
+
+
+@media(max-width: 700px){
+	.card{
+		flex-direction: column;
+		align-items: center;
+	}
+	.user-form{
+		max-width: 600px;
+	}
+}
